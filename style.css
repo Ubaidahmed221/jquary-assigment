@@ -1,0 +1,10 @@
+.card{
+    width: 20%;
+    background-color: gray; 
+    display: inline-block;
+    border: 2px solid black;
+}
+button:hover{
+   
+    background-color: burlywood;
+}

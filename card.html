@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <input id="myinput" type="search" placeholder="search">
+    <br>
+    <br>
+    
+    <div class="card">
+        <img src="images/33-re.jpg" class="w-100" alt="abc">
+       <center> <h3>iphone 12 pro</h3> </center>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <center><button>see profile</button></center>
+    </div>
+  
+
+    <div class="card">
+           <img src="images/cell phone1.jpg" alt="abc">
+       <center> <h3>cell phone</h3> </center>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <center> <button>see profile</button></center>
+    </div>
+
+    <div class="card">
+        <img src="images/infnix2.jpg" alt="abc">
+    <center> <h3>infnix</h3> </center>
+     <p>Lorem ipsum dolor sit amet.</p>
+     <center> <button>see profile</button></center>
+ </div>
+
+ <div class="card">
+    <img src="images/Infinix hot 11-13.jpg" alt="abc">
+<center> <h3>infnix hot</h3> </center>
+ <p>Lorem ipsum dolor sit amet.</p>
+ <center> <button>see profile</button></center>
+</div>
+
+ <br>
+ <br>
+
+
+<div class="card">
+    <img src="images/images (1).jpg" alt="abc">
+<center> <h3>redmi</h3> </center>
+ <p>Lorem ipsum dolor sit amet.</p>
+ <center> <button>see profile</button></center>
+</div>
+
+
+<script>
+    $(document).ready(function(){
+        $("#myinput").on("keyup", function (){
+            var value = $(this).val().toLowerCase();
+            $(".card h3").filter(function(){
+                $(this).toggle($(this).text().toLowerCase().indexOf(value)> -1)
+            });
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
